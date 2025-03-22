@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import {
@@ -8,7 +7,6 @@ import {
   Settings,
   Users,
   BarChart3,
-  Gear,
   BellRing,
   FileQuestion,
   Menu,
