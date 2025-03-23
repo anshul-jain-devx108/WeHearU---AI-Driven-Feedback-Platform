@@ -33,7 +33,7 @@ Below is the system architecture illustrating how components interact within **W
 Below is the flow diagram demonstrating how feedback is processed through the system.
 
 <p align="center">
-  <img src="FlowDiagram.png" alt="Flow Diagram" width="2000" height="1000">
+  <img src="FlowDiagram.png" alt="Flow Diagram" width="2300" height="1050">
 </p>
 
 ### Flow Overview:
