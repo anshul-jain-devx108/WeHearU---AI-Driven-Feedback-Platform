@@ -14,7 +14,7 @@ Welcome to **We Hear U** — a powerful feedback management platform that enable
 ## 🛠️ Architecture Diagram
 Below is the system architecture illustrating how components interact within **We Hear U**.
 
-![Architecture Diagram](diagram-export-23-3-2025-12_39_45-pm.png)
+![Architecture Diagram](Architecture Daigram.png)
 
 ### Components Overview:
 1. **API Gateway**: Handles authentication, authorization, and routing.
