@@ -13,8 +13,8 @@ Welcome to **We Hear U** — a powerful feedback management platform that enable
 
 ## 🛠️ Architecture Diagram
 Below is the system architecture illustrating how components interact within **We Hear U**.
+![Data Pipeline Architecture](https://raw.githubusercontent.com/anshul-jain-devx108/Big_Data_Engineering/main/Data%20Pipeline%20Architecture Diagram.png)
 
-![Architecture Diagram](Architecture Daigram.png)
 
 ### Components Overview:
 1. **API Gateway**: Handles authentication, authorization, and routing.
