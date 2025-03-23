@@ -28,6 +28,21 @@ Below is the system architecture illustrating how components interact within **W
 
 ---
 
+## 📐 Flow Diagram
+Below is the flow diagram demonstrating how feedback is processed through the system.
+
+![Flow Diagram](FlowDiagram.png)
+
+### Flow Overview:
+1. **User Feedback**: Users submit feedback through the frontend.
+2. **API Gateway**: Routes feedback requests to the Feedback Service.
+3. **Feedback Service**: Stores feedback in the database and sends it to the AI Service.
+4. **AI Service**: Performs sentiment analysis and sends results back to the Feedback Service.
+5. **Notification Service**: Sends real-time notifications if critical feedback is detected.
+6. **Dashboard**: Visualizes feedback data and insights using the AI results.
+
+---
+
 ## 🧑‍💻 Getting Started
 Follow these steps to set up and run the project locally:
 
