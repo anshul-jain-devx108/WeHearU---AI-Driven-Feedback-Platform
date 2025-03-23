@@ -13,7 +13,7 @@ Welcome to **We Hear U** — a powerful feedback management platform that enable
 
 ## 🛠️ Architecture Diagram
 Below is the system architecture illustrating how components interact within **We Hear U**.
-![Data Pipeline Architecture](https://raw.githubusercontent.com/anshul-jain-devx108/WeHearU---AI-Driven-Feedback-Platform/main/ArchitectureDiagram.png)
+![ Architecture](https://raw.githubusercontent.com/anshul-jain-devx108/WeHearU---AI-Driven-Feedback-Platform/main/ArchitectureDiagram.png)
 
 
 ### Components Overview:
