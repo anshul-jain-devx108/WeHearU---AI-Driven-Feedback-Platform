@@ -13,8 +13,8 @@ Welcome to **We Hear U** — a powerful feedback management platform that enable
 
 ## 🛠️ Architecture Diagram
 Below is the system architecture illustrating how components interact within **We Hear U**.
-![ Architecture](https://raw.githubusercontent.com/anshul-jain-devx108/WeHearU---AI-Driven-Feedback-Platform/main/ArchitectureDiagram.png)
 
+![Architecture Diagram](ArchitectureDiagram.png)
 
 ### Components Overview:
 1. **API Gateway**: Handles authentication, authorization, and routing.
