@@ -29,9 +29,12 @@ Below is the system architecture illustrating how components interact within **W
 ---
 
 ## 📐 Flow Diagram
+
 Below is the flow diagram demonstrating how feedback is processed through the system.
 
-![Flow Diagram](FlowDiagram.png)
+<p align="center">
+  <img src="FlowDiagram.png" alt="Flow Diagram" width="800" height="500">
+</p>
 
 ### Flow Overview:
 1. **User Feedback**: Users submit feedback through the frontend.
