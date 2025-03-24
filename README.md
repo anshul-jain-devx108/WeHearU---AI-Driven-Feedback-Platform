@@ -1,69 +1,104 @@
-# Welcome to your Lovable project
+# We Hear U
 
-## Project info
+Welcome to **We Hear U** — a powerful feedback management platform that enables businesses to gather, analyze, and act on user feedback efficiently using AI-driven sentiment analysis.
 
-**URL**: https://lovable.dev/projects/13f4ce5a-097b-4324-97b1-d793f8234134
+## 🚀 Features
+- **Feedback Ingestion**: Collect feedback from users through various channels.
+- **Sentiment Analysis**: AI-powered analysis to understand user sentiments.
+- **Real-time Notifications**: Receive alerts based on critical feedback.
+- **Dashboard**: Visualize feedback data through intuitive dashboards.
+- **API Management**: Secure and manage APIs with authentication and authorization.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🛠️ Architecture Diagram
+Below is the system architecture illustrating how components interact within **We Hear U**.
 
-**Use Lovable**
+![Architecture Diagram](ArchitectureDiagram.png)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/13f4ce5a-097b-4324-97b1-d793f8234134) and start prompting.
+### Components Overview:
+1. **API Gateway**: Handles authentication, authorization, and routing.
+2. **Authentication Service**: Manages user authentication and API keys.
+3. **Feedback Service**: Ingests feedback data and stores it in the database.
+4. **AI Service**: Performs sentiment analysis on collected feedback.
+5. **Notification Service**: Sends real-time alerts to users based on feedback analysis.
+6. **Frontend**: Provides a dashboard and notification center for users.
+7. **Database**: Stores feedback data using PostgreSQL and MongoDB.
+8. **Monitoring and Logging**: Integrated using Prometheus, Grafana, and Google Cloud Logging.
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## 📐 Flow Diagram
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Below is the flow diagram demonstrating how feedback is processed through the system.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+<p align="center">
+  <img src="FlowDiagram.png" alt="Flow Diagram" width="2800" height="1100">
+</p>
 
-Follow these steps:
+### Flow Overview:
+1. **User Feedback**: Users submit feedback through the frontend.
+2. **API Gateway**: Routes feedback requests to the Feedback Service.
+3. **Feedback Service**: Stores feedback in the database and sends it to the AI Service.
+4. **AI Service**: Performs sentiment analysis and sends results back to the Feedback Service.
+5. **Notification Service**: Sends real-time notifications if critical feedback is detected.
+6. **Dashboard**: Visualizes feedback data and insights using the AI results.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🧑‍💻 Getting Started
+Follow these steps to set up and run the project locally:
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+1. Clone the repository:
+```bash
+ git clone https://github.com/your-repo/we-hear-u.git
 ```
 
-**Edit a file directly in GitHub**
+2. Install dependencies:
+```bash
+ cd we-hear-u
+ npm install
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+3. Set up environment variables:
+- Create a `.env` file and configure it as per `.env.example`.
 
-**Use GitHub Codespaces**
+4. Start the services:
+```bash
+ docker-compose up
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+5. Access the dashboard at:
+```
+ http://localhost:3000
+```
 
-## What technologies are used for this project?
+---
 
-This project is built with .
+## 📦 API Endpoints
+| Method | Endpoint                | Description                 |
+|---------|-------------------------|------------------------------|
+| POST    | /api/feedback           | Submit user feedback         |
+| GET     | /api/feedback           | Retrieve feedback data       |
+| GET     | /api/sentiment-analysis | Perform sentiment analysis   |
+| POST    | /api/notifications      | Trigger notifications        |
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
+## 📊 Monitoring
+- **Prometheus** and **Grafana** are integrated for real-time monitoring and observability.
+- Logs are managed using **Google Cloud Logging**.
 
-Simply open [Lovable](https://lovable.dev/projects/13f4ce5a-097b-4324-97b1-d793f8234134) and click on Share -> Publish.
+---
 
-## I want to use a custom domain - is that possible?
+## 🤝 Contributing
+We welcome contributions! Please submit a pull request or open an issue if you'd like to contribute.
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+---
+
+## 📝 License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+Happy Coding! 🎉
