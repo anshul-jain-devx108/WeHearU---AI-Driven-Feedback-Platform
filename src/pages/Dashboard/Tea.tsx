@@ -12,7 +12,7 @@ import {
 } from '@/components/ui/select';
 import { toast } from 'sonner';
 import { 
-  Cup, 
+  Coffee, 
   Thermometer,
   Timer,
   Check,
@@ -102,7 +102,7 @@ const Tea = () => {
             {/* Tea selection and customization */}
             <div className="glass-card p-6">
               <h2 className="text-xl font-semibold mb-4 flex items-center">
-                <Cup className="mr-2 h-5 w-5" />
+                <Coffee className="mr-2 h-5 w-5" />
                 Tea Selection
               </h2>
               
@@ -208,7 +208,7 @@ const Tea = () => {
                   <div className="flex items-center justify-between p-4 bg-secondary/20 rounded-lg">
                     <div className="flex items-center">
                       <div className={`w-8 h-8 rounded-full ${getSelectedTeaDetails()?.color} mr-3 flex items-center justify-center`}>
-                        <Cup className="h-4 w-4 text-white" />
+                        <Coffee className="h-4 w-4 text-white" />
                       </div>
                       <div>
                         <div className="font-medium">{getSelectedTeaDetails()?.name}</div>
@@ -276,7 +276,7 @@ const Tea = () => {
                 </div>
               ) : (
                 <div className="flex flex-col items-center justify-center py-12 text-center">
-                  <Cup className="h-16 w-16 text-muted-foreground/40 mb-4" />
+                  <Coffee className="h-16 w-16 text-muted-foreground/40 mb-4" />
                   <h3 className="text-lg font-medium text-muted-foreground">No Tea Selected</h3>
                   <p className="text-muted-foreground mt-1">
                     Select a tea type to get started
@@ -293,7 +293,7 @@ const Tea = () => {
               {teaTypes.map(tea => (
                 <div key={tea.id} className="border rounded-lg p-4 flex flex-col">
                   <div className={`w-8 h-8 rounded-full ${tea.color} mb-2 flex items-center justify-center`}>
-                    <Cup className="h-4 w-4 text-white" />
+                    <Coffee className="h-4 w-4 text-white" />
                   </div>
                   <h3 className="font-medium">{tea.name}</h3>
                   <div className="mt-2 text-sm text-muted-foreground space-y-1">
