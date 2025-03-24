@@ -26,7 +26,6 @@ const SidebarNavigation: React.FC<SidebarNavigationProps> = ({ closeMobileSideba
     { name: 'Feedback', href: '/dashboard/feedback', icon: MessageSquare },
     { name: 'AI Insights', href: '/dashboard/insights', icon: LineChart },
     { name: 'Reports', href: '/dashboard/reports', icon: BarChart3 },
-    { name: 'Tea Station', href: '/dashboard/tea', icon: Coffee },
     { name: 'Team', href: '/dashboard/team', icon: Users },
     { name: 'Notifications', href: '/dashboard/notifications', icon: BellRing },
     { name: 'Help', href: '/dashboard/help', icon: FileQuestion },
