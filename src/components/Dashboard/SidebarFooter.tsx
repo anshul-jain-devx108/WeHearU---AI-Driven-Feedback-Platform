@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { FileQuestion, LifeBuoy, ExternalLink } from 'lucide-react';
+import { FileQuestion, LifeBuoy, ExternalLink, Coffee } from 'lucide-react';
 
 const SidebarFooter: React.FC = () => {
   return (
@@ -17,6 +17,10 @@ const SidebarFooter: React.FC = () => {
         <div className="flex items-center text-muted-foreground">
           <ExternalLink className="mr-2 h-3.5 w-3.5" />
           <a href="#" className="hover:text-primary hover:underline">API Reference</a>
+        </div>
+        <div className="flex items-center text-muted-foreground">
+          <Coffee className="mr-2 h-3.5 w-3.5" />
+          <a href="#" className="hover:text-primary hover:underline">Tea Brewing Guide</a>
         </div>
       </div>
     </div>
