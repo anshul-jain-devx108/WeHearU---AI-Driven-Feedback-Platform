@@ -14,7 +14,7 @@ import Dashboard from "./pages/Dashboard/Dashboard";
 import Feedback from "./pages/Dashboard/Feedback";
 import Insights from "./pages/Dashboard/Insights";
 import Reports from "./pages/Dashboard/Reports";
-import Tea from "./pages/Dashboard/Tea";
+import Team from "./pages/Dashboard/Team";
 import Settings from "./pages/Settings/Settings";
 
 const queryClient = new QueryClient();
@@ -35,7 +35,7 @@ const App = () => (
               <Route path="/dashboard/feedback" element={<Feedback />} />
               <Route path="/dashboard/insights" element={<Insights />} />
               <Route path="/dashboard/reports" element={<Reports />} />
-              <Route path="/dashboard/tea" element={<Tea />} />
+              <Route path="/dashboard/team" element={<Team />} />
               <Route path="/settings" element={<Settings />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
