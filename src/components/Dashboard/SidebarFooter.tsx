@@ -1,11 +1,23 @@
 
 import React from 'react';
+import { FileQuestion, LifeBuoy, ExternalLink } from 'lucide-react';
 
 const SidebarFooter: React.FC = () => {
   return (
     <div className="p-4 border-t border-gray-100">
-      <div className="text-xs text-muted-foreground">
-        <p>Need help? <a href="#" className="text-primary hover:underline">Contact support</a></p>
+      <div className="flex flex-col space-y-3 text-xs">
+        <div className="flex items-center text-muted-foreground">
+          <FileQuestion className="mr-2 h-3.5 w-3.5" />
+          <a href="#" className="hover:text-primary hover:underline">Documentation</a>
+        </div>
+        <div className="flex items-center text-muted-foreground">
+          <LifeBuoy className="mr-2 h-3.5 w-3.5" />
+          <a href="#" className="hover:text-primary hover:underline">Support</a>
+        </div>
+        <div className="flex items-center text-muted-foreground">
+          <ExternalLink className="mr-2 h-3.5 w-3.5" />
+          <a href="#" className="hover:text-primary hover:underline">API Reference</a>
+        </div>
       </div>
     </div>
   );
